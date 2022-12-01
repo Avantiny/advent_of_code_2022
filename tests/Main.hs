@@ -4,7 +4,6 @@ import Test.Hspec
 import DayOne
 
 main :: IO ()
-main = hspec $ do
-  describe "aoc" $ do
-    it "test" $ do
-      asdf `shouldBe` 1
+main = do  
+    contents <- readFile "tests/Day.txt"
+    print contents
