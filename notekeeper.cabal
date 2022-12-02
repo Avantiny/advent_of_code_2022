@@ -12,6 +12,6 @@ library katas
 test-suite my-tests
   main-is: Main.hs
   build-depends: base, hspec, mtl, split
-  other-modules: DayOne
+  other-modules: DayOne, DayTwo
   hs-source-dirs: tests src
   default-language: Haskell2010
