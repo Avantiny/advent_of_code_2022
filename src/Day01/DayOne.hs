@@ -1,4 +1,4 @@
-module DayOne where
+module AOC.Day01 where
 import Data.Char
 import Data.List.Split
 import Data.List

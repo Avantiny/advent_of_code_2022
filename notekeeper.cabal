@@ -12,6 +12,17 @@ library katas
 test-suite my-tests
   main-is: Main.hs
   build-depends: base, hspec, mtl, split
-  other-modules: DayOne, DayTwo, DayThree, DayFour
-  hs-source-dirs: tests src
+  -- other-modules: AOC.Day01, 
+  --                AOC.Day02, 
+  --                AOC.Day03, 
+  --                AOC.Day04,
+  -- exposed-modules: AOC.Day01,
+  --                  AOC.Day02,
+  --                  AOC.Day03,
+  --                  AOC.Day04,
+  --                  AOC.Day05,
+  hs-source-dirs: tests 
+                  src
+  --                 Day01 
+  --                 Day02 Day03 Day04 Day05
   default-language: Haskell2010
