@@ -1,10 +1,10 @@
 cabal-version:       3.8
-name:                notekeeper
+name:                aoc
 version:             0.1.0.0
 category:            Web
 build-type:          Simple
 
-library katas
+library
   build-depends:      base >=4.10
   hs-source-dirs:     src
   default-language:   Haskell2010
@@ -12,17 +12,12 @@ library katas
 test-suite my-tests
   main-is: Main.hs
   build-depends: base, hspec, mtl, split
-  -- other-modules: AOC.Day01, 
-  --                AOC.Day02, 
-  --                AOC.Day03, 
-  --                AOC.Day04,
-  -- exposed-modules: AOC.Day01,
-  --                  AOC.Day02,
-  --                  AOC.Day03,
-  --                  AOC.Day04,
-  --                  AOC.Day05,
+  other-modules:   Day01.Day01,
+                   Day02.Day02,
+                   Day03.Day03,
+                   Day04.Day04,
+                   Day05.Day05,
+                   Day06.Day06,
   hs-source-dirs: tests 
                   src
-  --                 Day01 
-  --                 Day02 Day03 Day04 Day05
   default-language: Haskell2010

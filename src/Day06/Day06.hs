@@ -1,4 +1,4 @@
-module AOC.Day06 where
+module Day06.Day06 where
 
 import Data.List
 

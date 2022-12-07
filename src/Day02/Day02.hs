@@ -1,4 +1,4 @@
-module AOC.Day02 where
+module Day02.Day02 where
 
 calculateScore :: String -> Int
 calculateScore "AX" = 1 + 3

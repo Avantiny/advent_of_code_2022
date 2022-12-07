@@ -1,7 +1,6 @@
-module AOC.Day05 where
+module Day05.Day05 where
 
 import Test.Hspec
-import DayOne
 
 import Control.Monad.State 
 
