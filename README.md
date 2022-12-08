@@ -8,5 +8,5 @@ I've only been doing Haskell for a month at the moment. I need to boost my skill
 
 ## Progress
 
-*Haskell:* 1,2,3,4,6
+*Haskell:* 1,2,3,4,6,8
 *JavaScript:* 5,7

@@ -18,6 +18,8 @@ test-suite my-tests
                    Day04.Day04,
                    Day05.Day05,
                    Day06.Day06,
+                   Day07.Day07,
+                   Day08.Day08
   hs-source-dirs: tests 
                   src
   default-language: Haskell2010
