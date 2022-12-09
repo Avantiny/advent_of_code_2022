@@ -1,4 +1,4 @@
-module Main where
+module Day08.Day08 where
 
 import Test.Hspec
 import Data.List
