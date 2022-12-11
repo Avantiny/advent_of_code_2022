@@ -1,0 +1,59 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier", "import", "simple-import-sort", "react-hooks"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/typescript",
+    "react-app",
+    "react-app/jest"
+  ],
+  "rules": {
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      { "selector": "typeLike", "format": ["PascalCase"] }
+    ],
+    "import/no-restricted-paths": [
+      "error",
+      {
+        "zones": [
+          { "target": "./src/domain/**/!(*.test).ts", "from": "./src/adapters/" },
+          { "target": "./src", "from": "./migrations" },
+          { "target": "./tests", "from": "./migrations" }
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [["^@?\\w"], ["@kiwicom"], ["^@sprof/"], ["^"], ["^domain", "^adapters", "^lib"], ["^\\."]]
+      }
+    ],
+    "eqeqeq": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/triple-slash-reference": "warn",
+    "testing-library/no-container": "warn",
+    "testing-library/no-node-access": "warn",
+    "@typescript-eslint/consistent-type-assertions": "error"
+  },
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".tsx", ".ts"],
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
