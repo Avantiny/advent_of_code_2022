@@ -10,4 +10,4 @@ I've only been doing Haskell for a month at the moment. I need to boost my skill
 
 *Haskell:* 1,2,3,4,6,8
 *JavaScript:* 5,7
-*TypeScript:* 9,10,11,12
+*TypeScript:* 9,10,11,12,13,14
